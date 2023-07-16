@@ -1,0 +1,14 @@
+
+.tools img {
+    width: 40px;
+  }
+
+svg {
+    width: 50px;
+}
+
+footer {
+  background-color: rgb(21, 67, 96);
+  padding-bottom: 0.5em;
+  padding-top: 0.8em;
+}
