@@ -1,120 +1,234 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Marcos Silvestrini</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
-
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/acordeon.css">
-    <link rel="stylesheet" href="assets/css/languages.css">
-    <link rel="stylesheet" href="assets/css/portfolio.css">
-    <link rel="stylesheet" href="assets/css/experience.css">
-    <link rel="stylesheet" href="assets/css/skills.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-</head>
-
-<body>
-    <main class="main">
-        <header class="header">
-            <img src="assets/img/my-photo.png" alt="Foto de Perfil" class="photo" id="profile.photo">
-
-            <h1 class="title">
-                Olá, <br>eu sou <span id="profile.name">Carregando...</span>
-            </h1>
-
-            <div class="information">
-                <p class="job" id="profile.job">Carregando...</p>
-                <p class="location" id="profile.location">Carregando...</p>
-                <p class="phone">
-                    <a href="tel:(43) 9 9999-9999" id="profile.phone">Carregando...</a>
-                </p>
-                <p class="email">
-                    <a href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</a>
-                </p>
-            </div>
-        </header>
-
-        <section class="acordeon">
-            <button class="trigger" type="button">
-                <h2>Skills</h2>
-            </button>
-
-            <div class="content">
-                <div class="skills">
-                    <section class="tools">
-                        <h3>Ferramentas:</h3>
-                        <ul id="profile.skills.hardSkills">
-                        </ul>
-                    </section>
-
-                    <section class="personal">
-                        <h3>Pessoal:</h3>
-                        <ul id="profile.skills.softSkills">
-                            <li>Carregando...</li>
-                            <li>Carregando...</li>
-                            <li>Carregando...</li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </section>
-
-        <section class="acordeon">
-            <button class="trigger" type="button">
-                <h2>Idiomas</h2>
-            </button>
-
-            <div class="content">
-                <ul class="languages" id="profile.languages">
-                    <li>Carregando...</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="acordeon">
-            <button class="trigger" type="button">
-                <h2>Portfólio</h2>
-            </button>
-
-            <div class="content">
-                <ul class="portfolio" id="profile.portfolio">
-                </ul>
-            </div>
-        </section>
-
-        <section class="acordeon">
-            <button class="trigger" type="button">
-                <h2>Experiência Profissional</h2>
-            </button>
-
-            <div class="content">
-                <ul class="experience" id="profile.professionalExperience">
-                </ul>
-            </div>
-        </section>
-
-        <footer>
-            <a href="https://www.dio.me/" target="_blank">
-                <img src="assets/img/dio.svg" alt="DIO">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Curriculum Digital de Gabriel Benatti" />
+        <meta name="author" content="Marcos Silvestrini - MS Soluções Digitais" />
+        <title>:: Gabriel Benatti - Curriculum ::</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/mystyle.css">
+        
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span data-aos="fade-down" class="d-block d-lg-none">Gabriel Benatti</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/gabriel.jpg" alt="Gabriel Benatti"/></span>
             </a>
-        </footer>
-    </main>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Quem sou</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formação</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#idioma">Idiomas</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Gabriel
+                        <span class="text-primary">Benatti</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        <a href="https://goo.gl/maps/JwejREKjUdnGhbEx7" target="_blank">Rua Pio XII, 626, Jardins · Londrina - PR</a> · <a class="social-icon" href="https://wa.me/5543998313578"><i class="fab fa-whatsapp"></i> (43) 9 9831-3578</a> ·
+                        <a href="mailto:gabriel_benattu@hotmail.com">gabriel_benatti@hotmail.com</a>
+                    </div>
+                    <p class="lead mb-5">Graduado em Design Gráfico, pela UNIFIL - Universidade Filadélfia de Londrina, atualmente morando na cidade de Londrina estado do Paraná, átuo desde 2019 no desenvolvimento e na criação de Layouts para postagens em redes sociais, materiais gráficos, Landing Pages, entre outros produtos e serviços.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="#!"><i class="fab fa-instagram"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" href="https://www.behance.net/gabrielsilvest2" target="_blank"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 data-aos="fade-right" class="mb-5">Experiência</h2>
 
-    <script src="assets/js/acordeon.js"></script>
-    <script src="assets/js/api.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+                    <div data-aos="fade-left" class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Designer Gráfico</h3>
+                            <div class="subheading mb-3">MarkDigx</div>
+                            <p>Planejar e monitorar os posts na midias sociais, dos clientes</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jul 2023 - Atual</span></div>
+                    </div>
 
+                    <div data-aos="fade-left" class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Designer Gráfico</h3>
+                            <div class="subheading mb-3">EuroContábil</div>
+                            <p>Responsável pelos posts nas redes sociais da empresa.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Nov 2022 - Jun 2023</span></div>
+                    </div>
+
+                    <div data-aos="fade-left" class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Designer Gráfico</h3>
+                            <div class="subheading mb-3">IRTrade</div>
+                            <p>Foi um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações no gerencimento de campanhas de e-mail marketing, agendamentos de posts para redes sociais (Instagram e Facebook), criação de material OFF (flyers, manuais, livros didáticos, etc.), criação de Landing Pages pelo RD Station e Photoshop, uso do tráfego para campanhas de anúncios, criação de material para e-mail marketing, tratamento de imagens, entre outros.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jun 2022 - Nov 2022</span></div>
+                    </div>
+
+                    <div data-aos="fade-left" class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Social Media</h3>
+                            <div class="subheading mb-3">Benefícia Seguros</div>
+                            <p>Anos incríveis ao lado de pessoas maravilhosas e poder contribuir com a transformação e das criações, desenvolvimento de conteúdos digitais, agendamento e acompanhamento de posts orgânicos nas redes sociais (Instagram, Facebook e Linkedin), cronograma de postagens, uso de tráfego pago para vídeos de anúncios, e demais atribuições relacionados ao que me foi confiado.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Out 2020 - Jun 2022</span></div>
+                    </div>
+
+                    <div data-aos="fade-left" class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Estagiário</h3>
+                            <div class="subheading mb-3">Apogeu Studio</div>
+                            <p>Foi fantástico fazer parte deste time ajudando muitas empresas com gerenciamento de campanhas de e-mail marketing, agendamentos de posts para redes sociais (Instagram e Facebook), tratamento de imagem, recorte de imagem, Fotomontagem, entre outras atribuições pertinentes a função.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Mai 2019 - Jun 2020</span></div>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education -->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 data-aos="fade-right" class="mb-5">Formação</h2>
+
+                    <div data-aos="fade-left" class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Universidade Filadélfia de Londrina - Campus Canadá</h3>
+                            <div class="subheading mb-3">Técnologo em Design Gráfico</div>
+                            <div>Ao longo do curso desenvolvemos processos criativos, tal qual às exigências do mercado. Além claro, do desenvolvimento das habilidades técnicas para atender às demandas do mercado de trabalho.</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2017 - 2020</span></div>
+                    </div>
+
+                    <div data-aos="fade-left" class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Faculdade Pitagoras - Unopar Catuaí</h3>
+                            <div class="subheading mb-3">Artes Visuais Multimídia</div>
+                            <div>Na graduação conhecemos as habilidades técnicas requeridas pelo mercado de trabalho, permitindo uma atuação dentro e fora do ambiente acadêmico.</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2015 - 2017</span></div>
+                    </div>
+                    
+                    <!--
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Colégio SESI Bandeirantes</h3>
+                            <div class="subheading mb-3">Ensino Médio</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2012 - 2014</span></div>
+                    </div> -->
+
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div data-aos="fade-right" class="subheading mb-3">Ferramentas</div>
+                    <ul data-aos="fade-left" class="list-inline dev-icons">
+                        <li class="list-inline-item"><img src="/assets/img/icons/photoshop.svg" alt="PhotoShop"></li>
+                        <li class="list-inline-item"><img src="/assets/img/icons/premiere.svg" alt="Premiere"></li>
+                        <li class="list-inline-item"><img src="/assets/img/icons/illustrator.svg" alt="Illustrator"></li>
+                        <li class="list-inline-item"><img src="/assets/img/icons/after-effects.svg" alt="After Effects"></li>
+                        <li class="list-inline-item"><img src="/assets/img/icons/rdstation.svg" alt="RD Station"></li>
+                    </ul>
+                    <div data-aos="fade-right" class="subheading mb-3">Trabalho</div>
+                    <ul data-aos="fade-left" class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check mr-3 "></i></span>
+                            Criação e desenvolvimento de conteúdos digitais
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check "></i></span>
+                            Agendamento e acompanhamento de posts orgânicos nas redes sociais (Intagram, Facebook e Linkedin)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check "></i></span>
+                            Cronograma de Postagens
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check "></i></span>
+                            Gerenciamento e Criação de material para e-mail marketing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check "></i></span>
+                            Criação de material OFF (flyers, manuais, livros didátivo, etc.)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check "></i></span>
+                            Criação de Landing Page pelo RD Station e Photoshop
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check "></i></span>
+                            Tratamento de imagens, recorte e fotomontagem.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Portfólio-->
+            <section class="resume-section" id="portfolio">
+                <div class="resume-section-content">
+                    <h2 data-aos="fade-right" class="mb-5">Portfólio</h2>
+                    <div class="row-img">
+                        <div class="tools" data-aos="fade-left"><img src="assets/img/behance.png"><a href="https://www.behance.net/gabrielsilvest2" target="_blank"> - Acesse meu portfólio.</a></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Idioma-->
+            <section class="resume-section" id="idioma">
+                <div class="resume-section-content">
+                    <h2 data-aos="fade-right" class="mb-5">Idiomas</h2>
+                    <ul data-aos="fade-left" class="list-inline">
+                        <li class="list-inline-item"><img src="/assets/img/icons/brasil.svg" alt="Português"></li>Fluente<br/><br/>
+                        <li class="list-inline-item"><img src="/assets/img/icons/eua.svg" alt="Inglês"></li>Inglês (Intermediario)<br/><br/>
+                        <li class="list-inline-item"><img src="/assets/img/icons/espanha.svg" alt="espanhol"></li> - Espanhol (básico)
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <footer>
+                <a href="https://www.linkedin.com/in/marcos-silvestrini-92941874/" target="_blank">
+                    <img src="assets/img/mswhite.png" width="5%" alt="MS Soluções Digitais">
+                </a>
+            </footer>
+
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
 </html>
